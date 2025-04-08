@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Sherwin",
+    "email": "sherwin.laguidao533@gmail.com",
+    "contact": "+63 1212 121212",
+    "date": "2025-04-18",
+    "selectedFlowers": [
+      {
+        "name": "Cherished-Love-Bundle",
+        "price": 3999
+      },
+      {
+        "name": "Daffodil",
+        "price": 999
+      },
+      {
+        "name": "deepest sympathies",
+        "price": 1900
+      }
+    ],
+    "totalPrice": 6898
+  }
+]

@@ -21,14 +21,17 @@
   },
   "homepage": "https://github.com/redaganan/bookquet-system-backend#readme",
   "devDependencies": {
+    "@types/nodemailer": "^6.4.17",
     "nodemon": "^3.1.9",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.2"
   },
   "dependencies": {
-    "dotenv": "^16.4.7",
-    "fastify-plugin": "^5.0.1",
     "@fastify/cors": "^10.1.0",
-    "fastify": "^5.2.2"
+    "dotenv": "^16.4.7",
+    "fastify": "^5.2.2",
+    "fastify-plugin": "^5.0.1",
+    "nodemailer": "^6.10.0",
+    "resend": "^4.2.0"
   }
 }

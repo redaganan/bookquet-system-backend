@@ -1,23 +1,62 @@
 [
   {
-    "name": "Sherwin",
-    "email": "sherwin.laguidao533@gmail.com",
-    "contact": "+63 1212 121212",
-    "date": "2025-04-18",
+    "name": "gered",
+    "email": "sherwin@gmail.com",
+    "contact": "123456",
     "selectedFlowers": [
       {
-        "name": "Cherished-Love-Bundle",
-        "price": 3999
-      },
-      {
-        "name": "Daffodil",
-        "price": 999
-      },
-      {
-        "name": "deepest sympathies",
-        "price": 1900
+        "name": "Cherished-Love-Bundl",
+        "price": 1000
       }
     ],
-    "totalPrice": 6898
+    "totalPrice": 1000
+  },
+  {
+    "name": "gered",
+    "email": "sherwin@gmail.com",
+    "contact": "123456",
+    "selectedFlowers": [
+      {
+        "name": "Cherished-Love-Bundl",
+        "price": 1000
+      }
+    ],
+    "totalPrice": 1000
+  },
+  {
+    "name": "gered",
+    "email": "sherwin@gmail.com",
+    "contact": "123456",
+    "selectedFlowers": [
+      {
+        "name": "Cherished-Love-Bundl",
+        "price": 1000
+      }
+    ],
+    "totalPrice": 1000
+  },
+  {
+    "name": "gered",
+    "email": "sherwin@gmail.com",
+    "contact": "123456",
+    "selectedFlowers": [
+      {
+        "name": "Cherished-Love-Bundl",
+        "price": 1000
+      }
+    ],
+    "totalPrice": 1000
+  },
+  {
+    "name": "gered",
+    "email": "sherwin@gmail.com",
+    "contact": "123456",
+    "selectedFlowers": [
+      {
+        "name": "Cherished-Love-Bundl",
+        "price": 1000
+      }
+    ],
+    "totalPrice": 1000
   }
 ]

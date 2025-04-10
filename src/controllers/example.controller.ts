@@ -2,6 +2,8 @@ import { FastifyReply, FastifyRequest } from "fastify";
 import fs from "fs";
 import path from "path";
 
+import { sendEmail } from "../utils/sendEmail";
+
 interface UploadedBody {
 	name: string;
 	email: string;
@@ -33,9 +35,16 @@ export const uploadController = async (
 	try {
 		const data = request.body as UploadedBody;
 
+        await sendEmail({
+			to: "sherwin.laguidao533@gmail.com",
+			subject: "Hello!",
+			text: "This is a plain text message.",
+			html: "<p>This is a test email.</p>",
+		});
+
 		// Define the path to save the JSON file
 		const filePath = path.join(__dirname, "../database/bookquet.json");
-		console.log("File path:", filePath);
+		// console.log("File path:", filePath);
 
 		// Read the existing data from the file
 		let fileData: UploadedBody[] = [];

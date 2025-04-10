@@ -8,6 +8,7 @@ interface UploadedBody {
 	name: string;
 	email: string;
 	contact: string;
+	date: string;
 	selectedFlowers: SelectedFlower[];
 	totalPrice: number;
 }
@@ -34,12 +35,16 @@ export const uploadController = async (
 ) => {
 	try {
 		const data = request.body as UploadedBody;
+		console.log("Received data:", data.selectedFlowers.map(flower => flower.name));
+		const flowers = data.selectedFlowers.map(flower => flower.name);
+
+		const html = `<p>This is your order summary: <br> ${flowers} <br> Total price: ${data.totalPrice} <br> Pick-up date: ${data.date} </p>`;
 
         await sendEmail({
-			to: "sherwin.laguidao533@gmail.com",
-			subject: "Hello!",
+			to: data.email,
+			subject: "Order being Procces!",
 			text: "This is a plain text message.",
-			html: "<p>This is a test email.</p>",
+			html: html,
 		});
 
 		// Define the path to save the JSON file
@@ -75,7 +80,7 @@ export const uploadController = async (
 		// Write the updated data back to the file
 		fs.writeFileSync(filePath, JSON.stringify(fileData, null, 2), "utf-8");
 
-		console.log("Data saved to bookquet.json:", data);
+		// console.log("Data saved to bookquet.json:", data);
 
 		// Process the uploaded data here
 		return reply.send({ message: "Upload successful", data });
